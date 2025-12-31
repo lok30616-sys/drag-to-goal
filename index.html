@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag to Goal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui">
+            <div id="level-display">Level: <span id="level">1</span></div>
+            <div id="drag-timer">
+                <div id="drag-bar"></div>
+            </div>
+            <div id="status">Drag the ball to the goal!</div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="message-overlay" class="hidden">
+            <div id="message-text"></div>
+            <button id="message-btn">Continue</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
